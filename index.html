@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Me Crazy</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</head>
+
+<body>
+  <!--Header Start-->
+  <header class="bg-primary row">
+    <hl class="text-center text-red fw-bolder p-3">WEATHER ME CRAZY</hl>
+  </header>
+  <!--Header End-->
+
+  <!--Main Content Start-->
+  <main>
+
+    <!--Location Form and Saved Locations Start-->
+    <div class="row d-flex justify-content-center">
+
+      <div class="col-sm-10 col-md-3 col-lg-3 p-3 m-3">
+        <form class="border-bottom border-secondary border-2 p-2" id="location-search">
+          <h2 class="fs-2 fw-bold col-12 m-2">Search For A City:</h2>
+          <input class="btn btn-lg btn-info col-12 text-lihght rounded my-2" id="location-input" type="text"
+            autofocus="true" placeholder="New York City">
+          <button type="submit" class="btn btn-lg btn-info col-12 text-light rounded my-2">Search</button>
+        </form>
+
+        <div class="col-12 d-none d-md-block d-lg-block p-2 text-center">
+        </div>
+
+        <div class="col-12 d-none d-md-block d-lg-block p-2" id="clear-saved">
+          <button class="btn btn-lg btn-danger col-12 text-light rounded my-1" id="clear-saved-locations">Clear Saved
+            Cities</button>
+        </div>
+      </div>
+
+    </div>
+    <!--Location Form and Saved Locations End-->
+
+    <div class="col-8">
+
+      <!--Current Weather Container Start-->
+      <div id="current-weather">
+        <div class="d-flex mx-3">
+
+          <!--Current Weather Header-->
+          <h2 class="fw-bold pt-2 pb-5"></h2>
+
+          <!--Current Weather Icon-->
+          <div class="image-container">
+            <img class="" id="current-icon">
+          </div>
+        </div>
+        <!--Current Weather Container End-->
+
+        <!--Current Weather Content Start-->
+        <div class="mx-3" id="current-weather-specs">
+          <h3 class="py-2 fw-light" id="current-temp"></h3>
+          <h3 class="py-2 fw-light" id="current-wind-speed"></h3>
+          <h3 class="py-2 fw-light" id="current-humidity"></h3>
+          <div class="d-flex">
+            <h3 class="py-2 fw-light" id="current-uvi"></h3>
+            <span id="uv-container"></span>
+          </div>
+        </div>
+        <!--Current Weather Content End-->
+      </div>
+
+    </div>
+
+    <!--Five Day Weather Header Start-->
+
+    <!--Five Day Weather Header End-->
+
+    <!--Five Day Weather Content Start-->
+
+    <!--Five Day Weather Content End-->
+
+  </main>
+  <!--Main Content End-->
+
+  <script src=".assets/js/script/js"></script>
+</body>
+
+</html>
