@@ -15,7 +15,7 @@
 <body>
   <!--Header Start-->
   <header class="bg-primary row">
-    <hl class="text-center text-red fw-bolder p-3">WEATHER ME CRAZY</hl>
+    <hl>WEATHER ME CRAZY</hl>
   </header>
   <!--Header End-->
 
@@ -25,9 +25,9 @@
     <!--Location Form and Saved Locations Start-->
     <div class="row d-flex justify-content-center">
 
-      <div class="col-sm-10 col-md-3 col-lg-3 p-3 m-3">
+      <div class="col-sm-10 col-md-3 col-lg-3">
         <form class="border-bottom border-secondary border-2 p-2" id="location-search">
-          <h2 class="fs-2 fw-bold col-12 m-2">Search For A City:</h2>
+          <h2 class="fs-2 fw-bold col-12 m-2">Search For A Location:</h2>
           <input class="btn btn-lg btn-info col-12 text-lihght rounded my-2" id="location-input" type="text"
             autofocus="true" placeholder="New York City">
           <button type="submit" class="btn btn-lg btn-info col-12 text-light rounded my-2">Search</button>
@@ -38,7 +38,7 @@
 
         <div class="col-12 d-none d-md-block d-lg-block p-2" id="clear-saved">
           <button class="btn btn-lg btn-danger col-12 text-light rounded my-1" id="clear-saved-locations">Clear Saved
-            Cities</button>
+            Location</button>
         </div>
       </div>
 
@@ -68,7 +68,7 @@
           <h3 class="py-2 fw-light" id="current-humidity"></h3>
           <div class="d-flex">
             <h3 class="py-2 fw-light" id="current-uvi"></h3>
-            <span id="uv-container"></span>
+            <span id="uvi-container"></span>
           </div>
         </div>
         <!--Current Weather Content End-->
@@ -91,6 +91,7 @@
   <!--Main Content End-->
 
   <script src=".assets/js/script/js"></script>
+
 </body>
 
 </html>
